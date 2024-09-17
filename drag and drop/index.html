@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="section">
+            <h3>TODO</h3>
+            <div class="empty">
+                <div class="fill" draggable="true"></div>
+            </div>
+        </div>
+        <div class="section">
+            <h3>In Progress</h3>
+            <div class="empty" id="in-progress"></div>
+        </div>
+        <div class="section">
+            <h3>Pending</h3>
+            <div class="empty" id="pending"></div>
+        </div>
+        <div class="section">
+            <h3>Approved</h3>
+            <div class="empty" id="approved"></div>
+        </div>
+        <div class="section">
+            <h3>Rejected</h3>
+            <div class="empty" id="rejected"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

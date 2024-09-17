@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taskboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="taskboard">
+        <div class="header">
+            <input type="text" id="new-task-title" placeholder="Task Title">
+            <textarea id="new-task-description" placeholder="Task Description"></textarea>
+            <button id="add-task-btn">Add Task</button>
+            <button id="sort-title">Sort by Title</button>
+        </div>
+        <div class="column" id="todo">
+            <h2>To Do</h2>
+            <div class="tasks"></div>
+        </div>
+        <div class="column" id="in-progress">
+            <h2>In Progress</h2>
+            <div class="tasks"></div>
+        </div>
+        <div class="column" id="done">
+            <h2>Done</h2>
+            <div class="tasks"></div>
+        </div>
+    </div>
+
+    <div id="task-edit">
+        <input type="text" id="edit-task-title" placeholder="Task Title">
+        <textarea id="edit-task-description" placeholder="Task Description"></textarea>
+        <button id="save-task-btn">Save</button>
+        <button id="cancel-task-btn">Cancel</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

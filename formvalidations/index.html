@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./index.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+
+        <form action="" method="post" id="registrationForm">
+
+        <label for="firstname">First Name</label>
+        <input type="text" id="firstname" name="firstname" required >
+        <span class="error" id="firstnameError"></span>
+
+        <label for="lastname">Last Name</label>
+        <input type="text" id="lastname" name="lastname" required >
+        <span class="error" id="lastnameError"></span>
+
+        <label for="email">Email</label>
+        <input  id="email" type="email" name="email" required>
+        <span class="error" id="emailError"></span>
+
+        <label for="password">Password</label>
+        <input id="password" type="password" name="password" required>
+        <span class="error" id="passwordError"></span>
+
+        <label for="pincode">Pincode</label>
+        <input type="number" id="pincode" name="pincode" required >
+        <span class="error" id="pincodeError"></span>
+
+        <label for="number">Number</label>
+        <input type="number" id="number" name="number" required >
+        <span class="error" id="numberError"></span>
+       
+        <div class="btn-section">
+
+            <input type="submit" value="submit">
+              <input type="reset" value="reset" id="reset">
+        </div>
+        </form>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>

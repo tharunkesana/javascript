@@ -1,0 +1,4 @@
+create a function
+give variable
+use if , else if and else
+return

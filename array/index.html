@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Length Checker</title>
+    <style>
+        #result {
+            width: 300px;
+            height: 100px;
+            text-align: center;
+            border: 1px solid #000;
+            margin-top: 20px;
+            transition: height 0.5s ease;
+        }
+        .error {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body> 
+    <h1>Array Length Checker</h1>
+    <input type="text" id="inputString" placeholder="Enter a array">
+    <button onclick="checkArrayLength()">Check Array Length</button>
+    <div id="result">Result will appear here</div>
+
+    <script>
+        function checkArrayLength() {
+            const array = [1, 2, 3, 4, 5];  
+            const limit = 4; 
+            const input = document.getElementById('inputString').value;               
+            const resultDiv = document.getElementById('result');
+            
+            if (array.length > limit) {
+                resultDiv.textContent = 'True';
+                resultDiv.style.backgroundColor = '';  
+                resultDiv.style.color = '';            
+                resultDiv.style.height = '200px';      
+            } else {
+                resultDiv.textContent = 'False';
+                resultDiv.classList.add('error');
+                resultDiv.style.color = '';            
+                resultDiv.style.height = '100px';
+                     
+            }
+        }
+    </script>
+</body>
+</html>
